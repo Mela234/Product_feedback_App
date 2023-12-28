@@ -211,7 +211,7 @@ export const AllContextProvider = ({ children }) => {
         } else {
           j += 0;
         }
-        //ypu were returning this thing here so it blcked everything you were doing Prosper
+        //you were returning this thing here so it blocked everything you were doing 
         //return i + j;
       }
     }

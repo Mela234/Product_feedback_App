@@ -9,10 +9,24 @@ import ReplyComponent from "../layout/feedback_assets/ReplyComponent";
 import SortComponent from "../layout/universal_assets/SortComponent";
 import { v4 as uuidv4 } from "uuid";
 import { useContext, useEffect } from "react";
+
 function Home() {
   const { data, sortState, setData } = useContext(AllContext);
   //this function swaps elements
+  
   function swap(arr, j) {
+    //trying to use insertion sort here 
+  //   let temp = arr[j];
+  //   let prevIndex = j-1;
+
+  //   while (prevIndex >=0 && arr[prevIndex].upvotes >temp.upvotes) {
+  //     arr[prevIndex +1] =arr[prevIndex];
+  //     prevIndex--;
+  //   }
+
+  //   arr[prevIndex + 1] = temp;
+  // }
+
     let prevEl = arr[j - 1].upvotes;
     let currentEl = arr[j].upvotes;
     console.log(arr);
